@@ -1,0 +1,15 @@
+opencv-python==4.8.1.78
+Pillow==11.3.0
+scikit-image==0.24.0
+transformers==4.37.2
+tokenizers==0.15.2
+numpy==1.24.2
+scipy==1.13.1
+scikit-learn==1.6.1
+matplotlib==3.9.4
+tensorboard==2.21.0
+tqdm==4.70.0
+thop==0.1.1.post2209072238
+einops==0.8.2
+networkx==3.2.1
+dashscope==1.26.5
