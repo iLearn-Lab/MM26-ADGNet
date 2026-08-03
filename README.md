@@ -20,16 +20,17 @@ Weili&#160;Guan<sup>2</sup>
         <img src="https://img.shields.io/badge/ACM%20MM-2026-blue.svg?style=flat-square" alt="MM 2026">
     </a>
     <a href="https://huggingface.co/datasets/iLearn-Lab/MM26-ADGNet-AITIR-Text" target="_blank">
-        <img src="https://img.shields.io/badge/Hugging%20Face-Datasets-green" alt="Hugging Face Datasets">
+        <img src="https://img.shields.io/badge/🤗%20Datasets-AITIR--Text-green" alt="Hugging Face Datasets">
     </a>
     <a href="https://huggingface.co/iLearn-Lab/MM26-ADGNet" target="_blank">
-        <img src="https://img.shields.io/badge/Hugging%20Face-Model-yellow" alt="Hugging Face Model">
+        <img src="https://img.shields.io/badge/🤗%20Model-ADGNet-yellow" alt="Hugging Face Model">
     </a>
     <a href="https://github.com/iLearn-Lab/MM26-ADGNet" target="_blank">
         <img src="https://img.shields.io/github/stars/iLearn-Lab/MM26-ADGNet?style=social" alt="GitHub Stars">
     </a>
 </div>
 </div>
+
 
 ## 📢 Updates
 
