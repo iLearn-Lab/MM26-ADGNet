@@ -146,9 +146,9 @@ We provide the trained checkpoints of **ADGNet** on three infrared small target 
 
 |  Dataset   | IoU (%) ↑ | Pd (%) ↑ | Fa (10⁻⁶) ↓ |                          Checkpoint                          |
 | :--------: | :-------: | :------: | :---------: | :----------------------------------------------------------: |
-|  IRSTD-1K  |   72.38   |  93.20   |    4.10     | [`Download`](https://huggingface.co/datasets/iLearn-Lab/MM26-ADGNet-AITIR-Text/tree/main/IRSTD-1K/text) |
-| NUDT-SIRST |   95.53   |  99.47   |    2.64     | [`Download`](https://huggingface.co/datasets/iLearn-Lab/MM26-ADGNet-AITIR-Text/tree/main/NUDT-SIRST/text) |
-|   SIRST    |   83.08   |  100.00  |    4.97     | [`Download`](https://huggingface.co/datasets/iLearn-Lab/MM26-ADGNet-AITIR-Text/tree/main/SIRST/text) |
+|  IRSTD-1K  |   72.38   |  93.20   |    4.10     | [`Download`](https://huggingface.co/iLearn-Lab/MM26-ADGNet/blob/main/ADGNet_mIoU_72.38_IRSTD-1K.pth.tar) |
+| NUDT-SIRST |   95.53   |  99.47   |    2.64     | [`Download`](https://huggingface.co/iLearn-Lab/MM26-ADGNet/blob/main/ADGNet_mIoU_95.53_NUDT-SIRST.pth.tar) |
+|   SIRST    |   83.08   |  100.00  |    4.97     | [`Download`](https://huggingface.co/iLearn-Lab/MM26-ADGNet/blob/main/ADGNet_mIoU_83.08_SIRST.pth.tar) |
 
 ## 📝 Text Annotations
 
@@ -166,7 +166,7 @@ We release the asymmetric text annotations used to construct the **AITIR** datas
     <tr>
       <td>IRSTD-1K</td>
       <td rowspan="3">Fixed Target Prompt + Detailed Background Prompt</td>
-      <td rowspan="3"><a href="https://huggingface.co/iLearn-Lab/MM26-ADGNet/tree/main">Download</a></td>
+      <td rowspan="3"><a href="https://huggingface.co/datasets/iLearn-Lab/MM26-ADGNet-AITIR-Text/tree/main">Download</a></td>
     </tr>
     <tr>
       <td>NUDT-SIRST</td>
@@ -176,6 +176,7 @@ We release the asymmetric text annotations used to construct the **AITIR** datas
     </tr>
   </tbody>
 </table>
+
 ## 🚀 Usage
 
 ### 🏋️ Training
