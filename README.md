@@ -3,12 +3,12 @@
     <b>(ACM MM-2026) ADGNet: Asymmetric Dual-text Guided Network for Infrared Small Target Detection
 </h2>
 <div>
-<a target="_blank" href="">Tongtong&#160;Wang</a><sup>1</sup>,
-<a target="_blank" href="">Mingzhu&#160;Xu</a><sup>1&#9993</sup>,
-<a target="_blank" href="">Chenglong&#160;Yu</a><sup>1</sup>,
+<a target="_blank" href="https://orcid.org/0009-0003-2421-1363">Tongtong&#160;Wang</a><sup>1</sup>,
+<a target="_blank" href="https://xumingzhu989.github.io/">Mingzhu&#160;Xu</a><sup>1&#9993</sup>,
+<a target="_blank" href="https://orcid.org/0009-0004-7729-1616">Chenglong&#160;Yu</a><sup>1</sup>,
 <a target="_blank" href="">Jing&#160;Wang</a><sup>1</sup>,
-<a target="_blank" href="">Xiaohui&#160;Lin</a><sup>1</sup>,
-<a target="_blank" href="">Weili&#160;Guan</a><sup>2</sup>,
+<a target="_blank" href="https://orcid.org/0009-0006-1639-5862">Xiaohui&#160;Lin</a><sup>1</sup>,
+<a target="_blank" href="https://scholar.google.com/citations?user=JOpagbMAAAAJ">Weili&#160;Guan</a><sup>2</sup>,
 </div>
 <sup>1</sup>School of Software, Shandong University&#160&#160&#160</span>
 <sup>2</sup>Harbin Institute of Technology, Shenzhen&#160&#160&#160</span>
@@ -24,6 +24,7 @@
     <img src="https://img.shields.io/badge/Hugging%20Face-Model-yellow" alt="Hugging Face Model"</a>
 </div>
 </div>
+
 
 ---
 
@@ -171,8 +172,6 @@ We release the asymmetric text annotations used to construct the **AITIR** datas
     </tr>
   </tbody>
 </table>
-
-
 ## 🚀 Usage
 
 ### 🏋️ Training
