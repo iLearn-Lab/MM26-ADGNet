@@ -11,12 +11,9 @@ Jing&#160;Wang<sup>1</sup>,
 Xiaohui&#160;Lin<sup>1</sup>,
 Weili&#160;Guan<sup>2</sup>
 </div>
-
 <sup>1</sup>School of Software, Shandong University&#160;&#160;&#160;
 <sup>2</sup>Harbin Institute of Technology, Shenzhen
-<br />
 <sup>&#9993;&#160;</sup>Corresponding author
-<br />
 
 <div align="center">
     <a href="" target="_blank">
@@ -29,8 +26,6 @@ Weili&#160;Guan<sup>2</sup>
         <img src="https://img.shields.io/badge/Hugging%20Face-Model-yellow" alt="Hugging Face Model">
     </a>
 </div>
-</div>
-
 ---
 
 ## 📢 Updates
