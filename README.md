@@ -1,30 +1,35 @@
 <div align="center">
 <h2 align="center">
-    <b>(ACM MM-2026) ADGNet: Asymmetric Dual-text Guided Network for Infrared Small Target Detection
+    <b>(ACM MM-2026) ADGNet: Asymmetric Dual-text Guided Network for Infrared Small Target Detection</b>
 </h2>
+
 <div>
-<a target="_blank" href="https://orcid.org/0009-0003-2421-1363">Tongtong&#160;Wang</a><sup>1</sup>,
-<a target="_blank" href="https://xumingzhu989.github.io/">Mingzhu&#160;Xu</a><sup>1&#9993</sup>,
-<a target="_blank" href="https://orcid.org/0009-0004-7729-1616">Chenglong&#160;Yu</a><sup>1</sup>,
-<a target="_blank" href="">Jing&#160;Wang</a><sup>1</sup>,
-<a target="_blank" href="https://orcid.org/0009-0006-1639-5862">Xiaohui&#160;Lin</a><sup>1</sup>,
-<a target="_blank" href="https://scholar.google.com/citations?user=JOpagbMAAAAJ">Weili&#160;Guan</a><sup>2</sup>,
-</div>
-<sup>1</sup>School of Software, Shandong University&#160&#160&#160</span>
-<sup>2</sup>Harbin Institute of Technology, Shenzhen&#160&#160&#160</span>
-<br />
-<sup>&#9993&#160;</sup>Corresponding author&#160;&#160;</span>
-<br/>
-<div align="center">
-    <a href="" target="_blank">
-    <img src="https://img.shields.io/badge/ACM MM-2026-blue.svg?style=flat-square" alt="MM 2026"></a>
-    <a href="https://huggingface.co/datasets/iLearn-Lab/MM26-ADGNet-AITIR-Text" target="_blank">
-    <img src="https://img.shields.io/badge/Hugging%20Face-Datasets-green" alt="Hugging Face Datasets"</a>
-    <a href="https://huggingface.co/iLearn-Lab/MM26-ADGNet" target="_blank">
-    <img src="https://img.shields.io/badge/Hugging%20Face-Model-yellow" alt="Hugging Face Model"</a>
-</div>
+Tongtong&#160;Wang<sup>1</sup>,
+Mingzhu&#160;Xu<sup>1&#9993;</sup>,
+Chenglong&#160;Yu<sup>1</sup>,
+Jing&#160;Wang<sup>1</sup>,
+Xiaohui&#160;Lin<sup>1</sup>,
+Weili&#160;Guan<sup>2</sup>
 </div>
 
+<sup>1</sup>School of Software, Shandong University&#160;&#160;&#160;
+<sup>2</sup>Harbin Institute of Technology, Shenzhen
+<br />
+<sup>&#9993;&#160;</sup>Corresponding author
+<br />
+
+<div align="center">
+    <a href="" target="_blank">
+        <img src="https://img.shields.io/badge/ACM%20MM-2026-blue.svg?style=flat-square" alt="MM 2026">
+    </a>
+    <a href="https://huggingface.co/datasets/iLearn-Lab/MM26-ADGNet-AITIR-Text" target="_blank">
+        <img src="https://img.shields.io/badge/Hugging%20Face-Datasets-green" alt="Hugging Face Datasets">
+    </a>
+    <a href="https://huggingface.co/iLearn-Lab/MM26-ADGNet" target="_blank">
+        <img src="https://img.shields.io/badge/Hugging%20Face-Model-yellow" alt="Hugging Face Model">
+    </a>
+</div>
+</div>
 
 ---
 
