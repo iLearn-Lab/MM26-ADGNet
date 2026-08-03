@@ -20,7 +20,7 @@ from torch.utils.tensorboard import SummaryWriter
 class TextEncoder(nn.Module):
     def __init__(self):
         super(TextEncoder, self).__init__()
-        self.textEncoder = CLIPTextModel.from_pretrained('/root/autodl-tmp/clip-vit-base-patch16')
+        self.textEncoder = CLIPTextModel.from_pretrained('./clip-vit-base-patch16')
 
     def forward(self, text, l_mask):
         with torch.no_grad():
