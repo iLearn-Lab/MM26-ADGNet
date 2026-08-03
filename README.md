@@ -68,7 +68,7 @@ This repository provides:
 
 ## 📁 Project Structure
 
-```text
+```python
 ADGNet
 ├── Figs/        # Overall framework of ADGNet
 ├── datasets/
@@ -102,14 +102,14 @@ ADGNet
 
 ### 📥 1. Clone the Repository
 
-```bash
+```python
 git clone https://github.com/iLearn-Lab/MM26-ADGNet.git
 cd MM26-ADGNet
 ```
 
 ### 🧪 2. Create the Environment
 
-```bash
+```python
 conda create -n ADGNet python=3.10 -y
 conda activate ADGNet
 ```
@@ -118,7 +118,7 @@ conda activate ADGNet
 
 ADGNet uses the pretrained **CLIP ViT-B/16** model. You can download the model weights from either **Hugging Face** or **ModelScope**.
 
-```bash
+```python
 sudo apt update
 sudo apt install git-lfs
 git lfs install
@@ -130,7 +130,7 @@ git clone https://www.modelscope.cn/openai-mirror/clip-vit-base-patch16.git
 
 ### 📦 4. Install Project Dependencies
 
-```bash
+```python
 pip install torch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 --index-url https://download.pytorch.org/whl/cu121
 pip install -r requirements.txt
 ```
@@ -179,7 +179,7 @@ We release the asymmetric text annotations used to construct the **AITIR** datas
 
 Train ADGNet on the selected dataset:
 
-```bash
+```python
 python train.py \
     --trainset "IRSTD-1K" \
     --testset "IRSTD-1K" \
@@ -196,7 +196,7 @@ python train.py \
 
 Evaluate a trained checkpoint and generate prediction maps:
 
-```bash
+```python
 python train.py \
     --trainset "IRSTD-1K" \
     --testset "IRSTD-1K" \
@@ -211,7 +211,7 @@ The prediction masks and `.mat` files will be saved in the corresponding directo
 
 After inference, calculate the ROC curve data and AUC score using the generated `.mat` prediction files:
 
-```bash
+```python
 python roc.py \
     --pred_dir "./outputs/<experiment-name>/mats" \
     --gt_dir "./datasets/IRSTD-1K/masks"
@@ -219,7 +219,7 @@ python roc.py \
 
 **Example:**
 
-```bash
+```python
 python roc.py \
     --pred_dir "./outputs/ADGNet-2026-08-02-22-03-45-IRSTD-1K/mats" \
     --gt_dir "./datasets/IRSTD-1K/masks"
