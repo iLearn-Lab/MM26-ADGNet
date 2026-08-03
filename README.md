@@ -2,7 +2,6 @@
 <h2 align="center">
     <b>(ACM MM-2026) ADGNet: Asymmetric Dual-text Guided Network for Infrared Small Target Detection</b>
 </h2>
-
 <div>
 Tongtong&#160;Wang<sup>1</sup>,
 Mingzhu&#160;Xu<sup>1&#9993;</sup>,
@@ -16,7 +15,6 @@ Weili&#160;Guan<sup>2</sup>
 <br />
 <sup>&#9993;&#160;</sup>Corresponding author
 <br />
-
 <div align="center">
     <a href="" target="_blank">
         <img src="https://img.shields.io/badge/ACM%20MM-2026-blue.svg?style=flat-square" alt="MM 2026">
@@ -27,14 +25,11 @@ Weili&#160;Guan<sup>2</sup>
     <a href="https://huggingface.co/iLearn-Lab/MM26-ADGNet" target="_blank">
         <img src="https://img.shields.io/badge/Hugging%20Face-Model-yellow" alt="Hugging Face Model">
     </a>
-    <a href="https://github.com/iLearn-Lab/MM26-ADGNet">
-        <img alt='stars' src="https://img.shields.io/github/stars/iLearn-Lab/MM26-ADGNet?style=social">
+    <a href="https://github.com/iLearn-Lab/MM26-ADGNet" target="_blank">
+        <img src="https://img.shields.io/github/stars/iLearn-Lab/MM26-ADGNet?style=social" alt="GitHub Stars">
     </a>
 </div>
-
 </div>
-
----
 
 ## 📢 Updates
 
