@@ -14,7 +14,6 @@ class ROCMetric():
         self.fp_arr = np.zeros(self.bins+1)
         self.neg_arr = np.zeros(self.bins+1)
         self.class_pos=np.zeros(self.bins+1)
-        # self.reset()
 
     def update(self, preds, labels):
         for iBin in range(self.bins+1):
@@ -28,18 +27,14 @@ class ROCMetric():
             self.class_pos[iBin]+=i_class_pos
 
     def get(self):
-
         tp_rates    = self.tp_arr / (self.pos_arr + 0.001)
         fp_rates    = self.fp_arr / (self.neg_arr + 0.001)
-
         recall      = self.tp_arr / (self.pos_arr   + 0.001)
         precision   = self.tp_arr / (self.class_pos + 0.001)
-
 
         return tp_rates, fp_rates, recall, precision
 
     def reset(self):
-
         self.tp_arr   = np.zeros([11])
         self.pos_arr  = np.zeros([11])
         self.fp_arr   = np.zeros([11])
