@@ -36,7 +36,7 @@ class DataSetLoader(Dataset):
         else:
             self.img_norm_cfg = img_norm_cfg
         self.tranform = augumentation()
-        self.tokenizer = CLIPTokenizer.from_pretrained('/root/autodl-tmp/clip-vit-base-patch16')
+        self.tokenizer = CLIPTokenizer.from_pretrained('./clip-vit-base-patch16')
         
         # ==========================================
         # Pre-load foreground and background text captions
