@@ -209,28 +209,6 @@ python train.py \
     --ckpt "./SOTA_pth/ADGNet_mIoU_72.38_IRSTD-1K.pth.tar"
 ```
 
-The prediction masks and `.mat` files will be saved in the corresponding directory under `outputs/`.
-
-### 📈 ROC and AUC Evaluation
-
-After inference, calculate the ROC curve data and AUC score using the generated `.mat` prediction files:
-
-```python
-python roc.py \
-    --pred_dir "./outputs/<experiment-name>/mats" \
-    --gt_dir "./datasets/IRSTD-1K/masks"
-```
-
-**Example:**
-
-```python
-python roc.py \
-    --pred_dir "./outputs/ADGNet-2026-08-02-22-03-45-IRSTD-1K/mats" \
-    --gt_dir "./datasets/IRSTD-1K/masks"
-```
-
-The calculated AUC, TPR, and FPR values will be displayed in the terminal and saved to `roc_metrics.txt`.
-
 ## 🖼️ Visualization
 
 The following figure presents qualitative comparisons between **ADGNet** and representative SOTA infrared small target detection methods on **IRSTD-1K**, **NUDT-SIRST**, and **SIRST**.
