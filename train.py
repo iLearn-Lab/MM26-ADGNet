@@ -10,7 +10,6 @@ import numpy as np
 import os
 import json as _json
 from transformers import CLIPTextModel
-from scipy.io import savemat
 
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'
 
@@ -185,6 +184,7 @@ class Trainer(object):
 
             fn_mIoU = mIoU()
             fn_PD_FA = PD_FA()
+            
 
             with torch.no_grad():
                 for data, mask, size, _, text_ids_fg, l_mask_fg, text_ids_bg, l_mask_bg in self.val_loaders[dkey]:
@@ -201,6 +201,7 @@ class Trainer(object):
                     mask_crop = mask[:, :, :size[0], :size[1]]
                     fn_mIoU.update((pred > self.opt.threshold).cpu(), mask_crop)
                     fn_PD_FA.update((pred[0, 0] > self.opt.threshold).cpu(), mask_crop[0, 0], size)
+                     
 
             eval_pixAcc, eval_mIoU = fn_mIoU.get()
             eval_Pd, eval_Fa = fn_PD_FA.get()
@@ -275,15 +276,13 @@ class Trainer(object):
 
             fn_mIoU = mIoU()
             fn_PD_FA = PD_FA()
+            # roc = ROCMetric(1,100)
 
             output_path = f'./outputs/{self.savename}/pngs'
-            mat_output_path = f'./outputs/{self.savename}/mats'
 
             if save_output:
                 if not osp.exists(output_path):
                     os.makedirs(output_path)
-                if not osp.exists(mat_output_path):
-                    os.makedirs(mat_output_path)
 
             with torch.no_grad():
                 for data, mask, size, filename, text_ids_fg, l_mask_fg, text_ids_bg, l_mask_bg in self.val_loaders[dkey]:
@@ -302,23 +301,25 @@ class Trainer(object):
 
                     fn_mIoU.update((pred > self.opt.threshold).cpu(), mask_crop)
                     fn_PD_FA.update((pred[0, 0] > self.opt.threshold).cpu(), mask_crop[0, 0], size)
+                    # roc.update(pred.cpu(), mask.cpu()) 
 
                     if save_output:
                         for j_ in range(pred.shape[0]):
                             j_pred_bin = (pred[j_].detach().cpu() > self.opt.threshold).float()
                             ToImg(j_pred_bin).save(osp.join(output_path, filename[j_] + '.png'))
-                            j_pred_np = pred[j_].detach().cpu().numpy().squeeze()
-                            savemat(osp.join(mat_output_path, filename[j_] + '.mat'), {'predict_map': j_pred_np})
 
             eval_pixAcc, eval_mIoU = fn_mIoU.get()
             eval_Pd, eval_Fa = fn_PD_FA.get()
             _, eval_nIoU = fn_mIoU.get_single()
             toc = timeit.default_timer()
+            # tpr, fpr,_,_ = roc.get()
 
             print('=========================')
             print('Inference on {}, time {}m{}s'.format(dkey, int((toc - tic) // 60), int(toc - tic) % 60))
             print('pixAcc: {:.4f}  mIoU: {:.4f}  nIoU: {:.4f}'.format(eval_pixAcc * 1e2, eval_mIoU * 1e2, eval_nIoU * 1e2))
             print('Pd: {:.4f}  Fa: {:.4f} (x1e-6)'.format(eval_Pd * 1e2, eval_Fa * 1e6))
+            # print(tpr)
+            # print(fpr)
             print('')
 
 
