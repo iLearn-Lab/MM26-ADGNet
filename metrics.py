@@ -3,9 +3,7 @@ import torch
 from skimage import measure
 
 class ROCMetric():
-    """Computes pixAcc and mIoU metric scores
-    """
-    def __init__(self, nclass, bins):  #bin的意义实际上是确定ROC曲线上的threshold取多少个离散值
+    def __init__(self, nclass, bins): 
         super(ROCMetric, self).__init__()
         self.nclass = nclass
         self.bins = bins
@@ -18,7 +16,6 @@ class ROCMetric():
     def update(self, preds, labels):
         for iBin in range(self.bins+1):
             score_thresh = (iBin + 0.0) / self.bins
-            # print(iBin, "-th, score_thresh: ", score_thresh)
             i_tp, i_pos, i_fp, i_neg,i_class_pos = cal_tp_pos_fp_neg(preds, labels, self.nclass,score_thresh)
             self.tp_arr[iBin]   += i_tp
             self.pos_arr[iBin]  += i_pos
