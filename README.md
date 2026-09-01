@@ -243,6 +243,16 @@ Please also consider checking out and citing our other related work:
   booktitle = {Proceedings of the ACM International Conference on Multimedia},
   year      = {2026},
 }
+
+@article{11017756,
+  author  = {Xu, Mingzhu and Yu, Chenglong and Li, Zexuan and Tang, Haoyu and Hu, Yupeng and Nie, Liqiang},
+  journal = {IEEE Transactions on Geoscience and Remote Sensing},
+  title   = {HDNet: A Hybrid Domain Network With Multiscale High-Frequency Information Enhancement for Infrared Small-Target Detection},
+  year    = {2025},
+  volume  = {63},
+  pages   = {1--15},
+  doi     = {10.1109/TGRS.2025.3574962},
+}
 ```
 
 ## 🛠️ IRSTD-AutoLabel
