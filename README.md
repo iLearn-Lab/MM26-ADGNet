@@ -249,7 +249,7 @@ Please also consider checking out and citing our other related work:
 
 In addition, we have open-sourced an automated annotation tool for infrared small target detection, **IRSTD-AutoLabel**. Interested readers are encouraged to visit the project page for more details and usage instructions:
 
-> Project: https://github.com/iLearn-Lab/IRSTD-AutoLabel
+> Project:：[iLearn-Lab/IRSTD-AutoLabel](https://github.com/iLearn-Lab/IRSTD-AutoLabel)
 
 ## 📄 License
 
