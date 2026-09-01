@@ -226,13 +226,23 @@ The following figure presents qualitative comparisons between **ADGNet** and rep
 If you find this project useful in your research, please consider citing our paper:
 
 ```bibtex
-
+@inproceedings{wang2026adgnet,
+  title     = {ADGNet: Asymmetric Dual-text Guided Network for Infrared Small Target Detection},
+  author    = {Wang, Tongtong and Xu, Mingzhu and Yu, Chenglong and Wang, Jing and Lin, Xiaohui and Guan, Weili},
+  booktitle = {Proceedings of the ACM International Conference on Multimedia},
+  year      = {2026},
+}
 ```
 
 Please also consider checking out and citing our other related work:
 
 ```bibtex
-
+@inproceedings{yu2026dgnet,
+  title     = {DGNet: Dual-knowledge Guided Network for Infrared Small Target Detection},
+  author    = {Yu, Chenglong and Xu, Mingzhu and Wang, Jing and Wang, Tongtong and Miao, Pingping and Nie, Liqiang},
+  booktitle = {Proceedings of the ACM International Conference on Multimedia},
+  year      = {2026},
+}
 ```
 
 ## 📄 License
