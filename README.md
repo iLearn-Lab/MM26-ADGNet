@@ -256,3 +256,5 @@ In addition, we have open-sourced an automated annotation tool for infrared smal
 This project is released under the [Apache License 2.0](./LICENSE).
 
 You may use, modify, and distribute the code in accordance with the terms of the license. Please retain the original license and attribution notices in redistributed or modified versions.
+
+**如有问题，欢迎联系:** wangtongtong@163.com **或** wangttong@mail.sdu.edu.cn
