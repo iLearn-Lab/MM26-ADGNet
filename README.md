@@ -19,6 +19,9 @@ Weili&#160;Guan<sup>2</sup>
     <a href="" target="_blank">
         <img src="https://img.shields.io/badge/ACM%20MM-2026-blue.svg?style=flat-square" alt="MM 2026">
     </a>
+    <a href="https://arxiv.org/abs/2609.00853" target="_blank">
+        <img src="https://img.shields.io/badge/arXiv-2609.00853-b31b1b.svg?style=flat-square" alt="arXiv">
+    </a>
     <a href="https://huggingface.co/datasets/iLearn-Lab/MM26-ADGNet-AITIR-Text" target="_blank">
         <img src="https://img.shields.io/badge/🤗%20Datasets-AITIR--Text-green" alt="Hugging Face Datasets">
     </a>
@@ -30,6 +33,7 @@ Weili&#160;Guan<sup>2</sup>
     </a>
 </div>
 </div>
+
 
 
 ## 📢 Updates
